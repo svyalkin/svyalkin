@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic,300italic,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body {
+            font-family:"Open Sans";
+        }
+        .-left {
+            float:left;
+            position:relative;
+        }
+        .-right {
+            float:right;
+            position:relative;
+        }
+        .clinets_phone_container_t {
+            padding: 50px 13px;
+        }
+        .clinets_phone_item_t {
+            background: rgba(0, 0, 0, 0.4);
+            width:190px;
+            height:340px;
+            padding: 50px 5px 0;
+        }
+        .-left:before {
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            background:url(img/clients_phone_d.png);
+            width:217px;
+            height:442px;
+        }
+        .-right:before {
+            content:"";
+            position:absolute;
+            top:0;
+            right:0;
+            background:url(img/clients_phone_d.png);
+            width:217px;
+            height:442px;
+        }
+        .clinets_phone_item_t {
+            text-align:center;
+            color:#cfd1d2;
+        }
+        .clinets_phone_item_t img {
+            margin:0 0 25px;
+        }
+        .clinets_phone_item_t h4 {
+            text-align:left;
+            font-family:"Open Sans";
+            font-size:18px;
+            font-weight:300;
+            margin: 0 0 10px; 
+        }
+        .clinets_phone_item_t p {
+            text-align:left;
+            font-family:"Open Sans";
+            font-size:14px;
+            font-weight:300;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="clinets_phone_container_t -left">
+        <div class="clinets_phone_item_t">
+            <img src="img/clients_icon_user.png" style="width:93px; height:93px;" />
+            <h4>Обслуживание населения</h4>
+            <p>Медклиники, автошколы, лингвоцентры, гостиницы, службы доставки воды, прачечные и т.п.</p>
+        </div>
+    </div>
+    <div class="clinets_phone_container_t -right">
+        <div class="clinets_phone_item_t">
+            <img src="img/clients_icon_party.png" style="width:92px; height:92px;" />
+            <h4>Досуг и развлечение</h4>
+            <p>Кинотеатры, ночные клубы, школы танцев, фитнес-центры и т.п.</p>
+        </div>
+    </div>
+</body>
+</html>
