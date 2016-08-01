@@ -257,11 +257,6 @@ close_btn--xs {
     background: url(../img/main--sp.png) 50% 0% no-repeat fixed #01203A;
     background-size: cover;
 }
-@media only screen and (-webkit-min-device-pixel-ratio:0) {  
-    .main {
-        padding: 140px 0 0;
-    }
-}
 .solutions {
     height: 568px;
     background: #ffffff;
