@@ -31,7 +31,7 @@ iframe {
 	clear:both;
 }
 /*GRID*/
-/* --sp = SmartPhones (max-width:767px)*/
+/* --xs = Extra Small Devices  (max-width:767px)*/
 /* --t = Tablets (min-width:768px) and (max-width:1023px)*/
 /* --tl = Tablets Large (min-width:1024px) and (max-width:1024px)*/
 /* --d = Desktops (min-width:1200px)*/
@@ -63,35 +63,35 @@ iframe {
         padding: 0 15px;
     }
 }
-.--xs {
+.xs {
     display: block;
 }
 @media only screen and (min-width:768px) {
-    .--xs {
+    .xs {
         display: none;
     }
 }
-.--t {
+.t {
     display: none;
 } 
 @media only screen and (min-width:768px) and (max-width:1023px) {
-    .--t {
+    .t {
         display: block;
     }
 }
-.--tl {
+.tl {
     display: none;
 }
 @media only screen and (min-width:1024px) and (max-width:1199px) {
-    .--tl {
+    .tl {
         display: block;
     }
 }
-.--d {
+.d {
     display: none;
 } 
 @media only screen and (min-width:1200px) {
-    .--d {
+    .d {
         display: block;
     }
 } 
@@ -263,7 +263,7 @@ close_btn--xs {
 }
 .ability {
     height: 535px;
-    padding:33px 0 0;
+    padding: 35px 0 0;
     background: url(../img/ability--sp.png) 50% 0% no-repeat fixed #ffffff;
     background-size: cover; 
 }
@@ -305,7 +305,7 @@ close_btn--xs {
         background-size: cover; 
     }
     .profit {
-        height: 1465px;
+        height: 1733px;
         background: #ffffff;
     }
     .clients {
@@ -343,7 +343,7 @@ close_btn--xs {
         background-size: cover; 
     }
     .profit {
-        height: 1465px;
+        height: 1170px;
         background: #ffffff;
     }
     .clients {
@@ -374,7 +374,7 @@ close_btn--xs {
         display: none;
     }
     .solutions {
-        height: 980px;
+        height:	1000px;
         background: #ffffff;
     }
     .ability {
@@ -384,7 +384,7 @@ close_btn--xs {
         background-size: cover; 
     }
     .profit {
-        height: 1465px;
+        height: 1475px;
         background: #ffffff;
     }
     .clients {
@@ -456,7 +456,7 @@ h3 {
 .main_footnote_item:before {
     content: "";
     position: absolute;
-    background: url(../img/checkbox--sp.png);
+    background: url(../img/icon--checkbox--xs.png);
     width: 19px;
     height: 19px;
     left: 0;
@@ -499,9 +499,10 @@ h3 {
 }
 .solutions_content--heading,
 .solutions_content--heading--reverse {
-    color: #303030;
+    color: #333333;
     width:135px;
     font-size: 15px;
+    font-weight: 400;
     letter-spacing: 0px;
     margin: 0 0 24px;
 }
@@ -519,11 +520,11 @@ h3 {
     border-bottom: 1px dashed #b5b4b4;   
 }
 .solutions_content--container {
-    padding: 20px 10px 0 0;
+    padding: 0 10px 0 0;
     text-align: right;
 }
 .solutions_content--container--reverse {
-    padding: 20px 0 0 10px;
+    padding: 0 0 0 10px;
     text-align: left; 
 }
 .solutions_content--container::before {
@@ -545,88 +546,184 @@ h3 {
     height: 24px;
 }
 .solutions_item {
+    position: relative;
     color: #7b7f83;
     font-size: 14px;
+    padding: 20px 0 0 0;
 }
 .solutions_item--discription,
 .solutions_item--discription--reverse {
     display: none;
 }
-/*<SOLUTIONS--ICONS>*/
-.--handup--xs::after {
+.solutions_figure {
+    display: none;
+}
+/*<SOLUTIONS--ICONS>*/ /*TODO DEBUG THIS SECTION ON IE 10*/
+[class*="icon--"] {
+    position: relative;
+}
+.icon--handup--xs::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 10px;
-    background: url(../img/handup--xs.png) no-repeat;
+    left: 0;
+    background: url(../img/handup--xs.png);
     width: 19px;
     height: 19px;
 }
-.--fixedprice--xs::after {
+.icon--fixedprice--xs::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 0;
     background: url(../img/fixedprice--xs.png) no-repeat;
     width: 18px;
     height: 18px;
 }
-.--result--xs::after {
+.icon--result--xs::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 0;
     background: url(../img/result--xs.png) no-repeat;
     width: 18px;
     height: 18px;
 }
-.--shield--xs::after {
+.icon--shield--xs::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 0;
     background: url(../img/shield--xs.png) no-repeat;
     width: 17px;
     height: 17px;
 }
-.--handdown--xs:after {
+.icon--handdown--xs::before {
     content: "";
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     background: url(../img/handdown--xs.png) no-repeat;
     width: 19px;
     height: 19px;
 }
-.--price--xs:after {
+.icon--price--xs::before {
     content: "";
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     background: url(../img/price--xs.png) no-repeat;
     width: 18px;
     height: 18px;
 }
-.--job--xs:after {
+.icon--job--xs::before {
     content: "";
     position: absolute;
     top: 0;
-    right: 10px;
-    background: url(../img/risk--xs.png) no-repeat;
+    right: 0;
+    background: url(../img/job--xs.png) no-repeat;
     width: 17px;
     height: 17px;
 }
-.--risk--xs:after {
+.icon--risk--xs::before {
     content: "";
     position: absolute;
     top: 0;
-    right: 10px;
-    background: url(../img/job--xs.png) no-repeat;
+    right: 0;
+    background: url(../img/risk--xs.png) no-repeat;
     width: 18px;
     height: 18px;
 }
-/*</SOLUTIONS--ICONS>*/
-/*</END OF SOLUTIONS>*/
+/*</--SOLUTIONS--ICONS>*/
+/*</--SOLUTIONS>*/
+/*<ABILITY>*/
+.ability_heading {
+    font-size: 18px;
+    font-weight: 400;
+}
+/*</ABILITY>*/
+/*<PROFIT>*/
+.profit_heading {
+    color: #303030;
+    font-size: 18px;
+    margin: 35px 0 25px;    
+}
+.profit_feature {
+    text-align: center;
+    padding: 0 15px;
+    margin: 0 0 20px;
+}
+.profit_feature--heading {
+    color: #2e363f;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0 10px;
+}
+.profit_feature--content {
+    color: #8a8c94;
+    font-size: 14px;
+}
+.img--xs--star,
+.img--xs--install {
+    width: 51px;
+    height: 51px;
+}
+.img--star,
+.img--people,
+.img--install {
+    display: none;
+}
+.img--xs--people {
+    width: 64px;
+    height: 51px;
+}
+@media only screen and (min-width:768px) {
+    .img--xs--star,
+    .img--xs--install,
+    .img--xs--people {
+        display: none;
+    }
+    .img--star,
+    .img--people,
+    .img--install {
+        display: inline;
+    }
+}
+.profit--heading {
+    color: rgb(91, 91, 91);
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 35px 40px 0px;
+    margin: 28px 0 40px;    
+    border-top: 1px solid #b3b2b2;
+}
+.profit_item {
+    background: #f1f3f5;
+    margin: 0 0 15px;
+}
+.profit_item--heading {
+    color: rgb(46, 54, 63);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 10px 10px 65px;
+    line-height: 1.6;
+}
+.profit_item--content {
+    color: rgb(134, 136, 144);
+    font-size: 14px;
+    padding: 0px 0px 15px 65px;
+    line-height: 1.4;
+}
+.icon--checkbox::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    background: url(../img/icon--checkbox--xs--large.png);
+    width: 34px;
+    height: 34px;
+}
+/*</PROFIT>*/
 @media only screen and (min-width:768px) and (max-width:1023px) {
     /*<--MAIN-->*/
     .main_heading {
@@ -692,6 +789,10 @@ h3 {
     .solutions_container {
         width: 734px;
     }
+    .solutions_content,
+    .solutions_content--reverse {
+        width: 220px;
+    }
     .solutions_content--heading,
     .solutions_content--heading--reverse {
         font-size: 24px;
@@ -701,7 +802,7 @@ h3 {
     .solutions_content--heading--container {
         display: table;
         height: 100px;
-        margin: 0 0 40px;
+        margin: 0 0 30px;
     }
     .solutions_content--heading--container .solutions_content--heading,
     .solutions_content--heading--container .solutions_content--heading--reverse {
@@ -711,7 +812,7 @@ h3 {
     .solutions_content--container,
     .solutions_content--container--reverse {
         height: 85px;
-        padding: 30px 0 0;
+        padding: 0;
         margin: 0px 0px 35px;
     }
     .solutions_content--container::before {
@@ -719,9 +820,18 @@ h3 {
         position: absolute;
         bottom: 10px;
         right: 0;
-        background: url(../img/arrow--t-green.png) no-repeat;
+        background: url(../img/icon--xs--arrow--red.png);
         width: 13px;
-        height: 7px;
+        height: 24px;
+    }
+    .solutions_content--container--reverse::before {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        background: url(../img/icon--xs--arrow--green.png);
+        width: 13px;
+        height: 24px;
     }
     .solutions_content--heading {
         text-align: right;
@@ -732,10 +842,7 @@ h3 {
     .solutions_item {
         color: #5b5f64;
         font-size: 15px;
-    }
-    .solutions_content,
-    .solutions_content--reverse {
-        width: 220px;
+        padding: 30px 0 0;
     }
     .solutions_figure {
         display: block;
@@ -744,7 +851,7 @@ h3 {
     }
     /*</SOLUTIONS>*/
     /*<SOLUTIONS--ICONS>*/
-    .--handup--t::after {
+    .icon--handup--t::before {
         content: "";
         position: absolute;
         top: 0;
@@ -753,7 +860,7 @@ h3 {
         width: 24px;
         height: 24px;
     }
-    .--fixedprice--t::after {
+    .icon--fixedprice--t::before {
         content: "";
         position: absolute;
         top: 0;
@@ -762,7 +869,7 @@ h3 {
         width: 24px;
         height: 24px;
     }
-    .--result--xs::after {
+    .icon--result--xs::before {
         content: "";
         position: absolute;
         top: 0;
@@ -771,7 +878,7 @@ h3 {
         width: 24px;
         height: 24px;
     }
-    .--shield--xs::after {
+    .icon--shield--xs::before {
         content: "";
         position: absolute;
         top: 0;
@@ -780,7 +887,7 @@ h3 {
         width: 24px;
         height: 24px;
     }
-    .--handdown--xs:after {
+    .icon--handdown--xs::before {
         content: "";
         position: absolute;
         top: 0;
@@ -789,7 +896,7 @@ h3 {
         width: 24px;
         height: 24px;
     }
-    .--price--xs:after {
+    .icon--price--xs::before {
         content: "";
         position: absolute;
         top: 0;
@@ -798,16 +905,7 @@ h3 {
         width: 24px;
         height: 24px;
     }
-    .--job--xs:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: url(../img/risk--t.png) no-repeat;
-        width: 24px;
-        height: 24px;
-    }
-    .--risk--xs:after {
+    .icon--job--xs::before {
         content: "";
         position: absolute;
         top: 0;
@@ -816,7 +914,60 @@ h3 {
         width: 24px;
         height: 24px;
     }
+    .icon--risk--xs::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url(../img/risk--t.png) no-repeat;
+        width: 24px;
+        height: 24px;
+    }
     /*</SOLUTIONS--ICONS>*/
+    /*<PROFIT>*/
+    .profit_heading {
+        color: rgb(51, 51, 51);
+        font-size: 36px;
+        margin: 65px 0;
+    }
+    .profit_feature {
+        margin: 0 100px 50px;
+    }
+    .img--star,
+    .img--install {
+        width: 115px;
+        height: 115px;
+    }
+    .img--people {
+        width: 142px;
+        height: 116px;
+    }
+    .profit--heading {
+        font-size: 24px;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+        padding: 45px 30px 0px;
+        margin: 23px 0 50px;
+    }
+    .profit_feature--heading {
+        font-size: 18px;
+        margin: 30px 0 7px;
+    }
+    .profit_item {
+        background: #f1f3f5;
+        margin: 0 auto 10px;
+        width: 530px;
+    }
+    .profit_item--heading {
+        font-size: 18px;
+        padding: 15px 15px 10px 60px;
+        line-height: 1.4;
+    }
+    .profit_feature--content {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    /*</PROFIT>*/
 }
 @media only screen and (min-width:1024px) and (max-width:1199px) {
     /*<--MAIN-->*/
@@ -870,6 +1021,209 @@ h3 {
         display: inline;
     }
     /*</--MAIN-->*/
+    /*<SOLUTIONS>*/
+        .solutions_heading {
+        color: #333333;
+        font-size: 36px;
+        margin: 68px 0 45px;
+        }
+        .solutions_container {
+            width: 996px;/*max-width should be 994px*/
+        }
+        .solutions_content,
+        .solutions_content--reverse {
+            width: 310px;
+        }
+        .solutions_content--heading,
+        .solutions_content--heading--reverse {
+            font-size: 24px;
+            width: 100%;
+            padding: 0;
+        }
+        .solutions_content--heading--container {
+            display: table;
+            height: 100px;
+            margin: 0 0 45px;
+        }
+        .solutions_content--heading--container .solutions_content--heading,
+        .solutions_content--heading--container .solutions_content--heading--reverse {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .solutions_content--container,
+        .solutions_content--container--reverse {
+            height: 55px;
+            margin: 0px 0px 80px;
+            padding: 0;
+            letter-spacing: 0.4px;
+        }
+        .solutions_content--container::before {
+            content: "";
+            position: absolute;
+            bottom: 8px;
+            left: 17px;
+            background: url(../img/icon--xs--arrow--red.png);
+            width: 13px;
+            height: 24px;
+        }
+        .solutions_content--container--reverse::before {
+            content: "";
+            position: absolute;
+            bottom: 8px;
+            right: 17px;
+            background: url(../img/icon--xs--arrow--green.png);
+            width: 13px;
+            height: 24px;
+        }
+        .solutions_content--heading {
+            text-align: right;
+        }
+        .solutions_content--heading--reverse {
+            text-align: left;
+        }
+        .solutions_item {
+            color: #2e363f;
+            font-size: 16px;
+        }
+        .solutions_content--container .solutions_item {
+            padding: 0 35px 0 0;
+        }
+        .solutions_content--container--reverse .solutions_item {
+            padding: 0 0 0 35px;
+        }
+        .solutions_figure {
+            display: block;
+            float: left;
+            margin: 40px 50px 0;
+        }
+        /*<SOLUTIONS--ICONS>*/
+        .icon--handup--t::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../img/handup--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--fixedprice--t::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../img/fixedprice--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--result--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../img/result--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--shield--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../img/shield--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--handdown--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../img/handdown--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--price--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../img/price--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--job--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../img/job--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--risk--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../img/risk--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        /*</SOLUTIONS--ICONS>*/
+    /*</SOLUTIONS>*/
+    /*<PROFIT>*/
+    .profit_heading {
+            color: rgb(51, 51, 51);
+        font-size: 36px;
+        margin: 65px 0;
+    }
+    .profit_feature {
+        display: block;
+        float: left;
+        width: 330px;
+        padding: 0;
+        margin: 0;
+        text-align: center;   
+    }
+    .img--star,
+    .img--install {
+        width: 115px;
+        height: 115px;
+    }
+    .img--people {
+        width: 142px;
+        height: 116px;
+    }
+    .profit--heading {
+        font-size: 24px;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+        padding: 45px 160px 0px;
+        margin: 60px 0 50px;
+    }
+    .profit_feature--heading {
+        font-size: 18px;
+        text-align: left;
+        margin: 35px 0 7px;
+        padding: 0 0 0 25px;
+    }
+    .profit_feature--content {
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.5;
+        padding: 0 0 0 25px;
+    }
+    .profit_item {
+        background: #f1f3f5;
+        margin: 0 auto 10px;
+        width: 530px;
+    }
+    .profit_item--heading {
+        font-size: 18px;
+        padding: 15px 15px 10px 60px;
+        line-height: 1.4;
+    }
+    /*</PROFIT>*/
 }
 @media only screen and (min-width:1200px) {
     /*<--MAIN-->*/
@@ -925,6 +1279,224 @@ h3 {
         float: left;
     }
     /*</--MAIN-->*/
+    /*<SOLUTIONS>*/
+        .solutions_heading {
+        color: #333333;
+        font-size: 48px;
+        margin: 78px 0 37px;
+        }
+        .solutions_container {
+            width: 960px;
+        }
+        .solutions_content,
+        .solutions_content--reverse {
+            width: 290px;
+        }
+        .solutions_content--heading,
+        .solutions_content--heading--reverse {
+            font-size: 24px;
+            width: 100%;
+            padding: 0;
+        }
+        .solutions_content--heading--container {
+            display: table;
+            height: 100px;
+            margin: 0 0 70px;
+        }
+        .solutions_content--heading--container .solutions_content--heading,
+        .solutions_content--heading--container .solutions_content--heading--reverse {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .solutions_content--container,
+        .solutions_content--container--reverse {
+            height: 55px;
+            margin: 0px 0px 115px;
+            padding: 0;
+            letter-spacing: 0.4px;
+        }
+        .solutions_content--container::before {
+            content: "";
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            background: url(../img/arrow--d--red.png);
+            width: 24px;
+            height: 13px;
+        }
+        .solutions_content--container--reverse::before {
+            content: "";
+            position: absolute;
+            bottom: 8px;
+            right: 0;
+            background: url(../img/arrow--d--green.png);
+            width: 24px;
+            height: 13px;
+        }
+        .solutions_content--heading {
+            text-align: right;
+        }
+        .solutions_content--heading--reverse {
+            text-align: left;
+        }
+        .solutions_item {
+            color: #2e363f;
+            font-size: 16px;
+        }
+        .solutions_content--container .solutions_item {
+            padding: 0 35px 0 0;
+        }
+        .solutions_content--container--reverse .solutions_item {
+            padding: 0 0 0 35px;
+        }
+        .solutions_figure {
+            display: block;
+            float: left;
+            margin: 165px 50px 0;
+        }
+        /*<SOLUTIONS--ICONS>*/
+        .icon--handup--t::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../img/handup--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--fixedprice--t::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../img/fixedprice--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--result--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../img/result--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--shield--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../img/shield--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--handdown--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../img/handdown--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--price--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../img/price--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--job--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../img/job--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        .icon--risk--xs::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../img/risk--t.png) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+        /*</SOLUTIONS--ICONS>*/
+    /*</SOLUTIONS>*/
+    /*<PROFIT>*/
+    .profit_heading {
+        color: rgb(51, 51, 51);
+        font-size: 48px;
+        letter-spacing: 0.7px;
+        margin: 80px 0 100px;
+    }
+    .icon--checkbox::before {
+        content: "";
+        position: absolute;
+        left: 24px;
+        top: 18px;
+        background: url(../img/icon--checkbox--d.png);
+        width: 69px;
+        height: 69px;
+    }
+    .profit_feature {
+        display: block;
+        float: left;
+        width: 365px;
+        padding: 0;
+        margin: 0 15px 0 0;
+        text-align: center;   
+    }
+    .img--star,
+    .img--install {
+        width: 140px;
+        height: 140px;
+    }
+    .img--people {
+        width: 177px;
+        height: 141px;
+    }
+    .profit--heading {
+        font-size: 30px;
+        letter-spacing: 0.2px;
+        line-height: 1.6;
+        padding: 58px 160px 0px;
+        margin: 75px 0 40px;
+    }
+    .profit_feature--heading {
+        font-size: 24px;
+        text-align: left;
+        margin: 32px 0 7px;
+        padding: 0 0 0 25px;
+    }
+    .profit_feature--content {
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.5;
+        padding: 0 0 0 25px;
+    }
+    .profit_item {
+        background: transparent;
+        margin: 0 auto 60px;
+        width: 650px;
+    }
+    .profit_item--heading {
+        font-size: 24px;
+        padding: 15px 15px 10px 110px;
+        line-height: 1.16;
+    }
+    .profit_item--content {
+        font-size: 16px;
+        padding: 0px 0px 15px 110px;
+        line-height: 1.6;
+    }
+    /*</PROFIT>*/
 }
 /*BUTTON*/
 .btn {
@@ -978,11 +1550,11 @@ h3 {
     -ms-filter: blur(2px);
     filter: blur(2px);
 }
-.-background_header {
+.background_header {
     background: rgba(7, 20, 33, 0.6) no-repeat;
     background-size: cover;
 }
-.-active {
+.status--active {
     position: relative;
     border-bottom: 1px solid #ff4631;
 }
