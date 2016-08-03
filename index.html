@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/css/swiper.min.css" media="(max-width:1199px)">
     <link href="css/style.css" rel="stylesheet" >
 </head>
 <body>
@@ -191,81 +191,66 @@
             <!--ABILITY SECTION-->
             <section id="ability" class="ability">
                 <!--CONTENT CONTAINER-->
-                <div class="content_conteiner">
-                   <h2 class="ability_heading">Что мы умеем?</h2>
-                   <div class="swiper-container">
-                       <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="ability--swiper_slide">
-                                    <img class="icon--aso" src="img/icon--aso.png" alt="ASO" />
-                                    <h4 class="ability--swiper_heading">ASO</h4>
-                                    <div class="clearfix"></div>
-                                    <div class="ability--swiper_content">
-                                        Проведение ASO в Google Play: подбор эффективных ключевых слов, оптимизация заголовков, описаний, тэгов.
+                <div class="content_container">
+                    <h2 class="ability_heading">Что мы умеем?</h2>
+                    <!--ABILITY SLIDER-->
+                    <div class="swiper--container">
+                        <div class="ability--swiper_container swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="ability--swiper_slide background--light_grey">
+                                        <img class="icon--aso" src="img/icon--aso.png" alt="ASO" />
+                                        <h4 class="ability--swiper_heading">ASO</h4>
+                                        <div class="clearfix"></div>
+                                        <div class="ability--swiper_content">
+                                            Проведение ASO в Google Play: подбор эффективных ключевых слов, оптимизация заголовков, описаний, тэгов.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ability--swiper_slide background--grey">
+                                        <img class="icon--review" src="img/icon--review.png" alt="размещение обзоров" />
+                                        <h4 class="ability--swiper_heading">Размещение обзоров </h4>
+                                        <div class="clearfix"></div>
+                                        <div class="ability--swiper_content">
+                                            Копирайтинг и размещение обзорных статей на специализированных порталах.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ability--swiper_slide background--light_grey">
+                                        <img class="icon--ppc" src="img/icon--ppc.png" alt="PPC-кампании" />
+                                        <h4 class="ability--swiper_heading">Контекстная реклама</h4>
+                                        <div class="clearfix"></div>
+                                        <div class="ability--swiper_content">
+                                            Проведение кампаний в мобильных рекламных сетях: Google Adwords, Yandex Директ.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide bottom-slide--left">
+                                    <div class="ability--swiper_slide background--grey">
+                                        <img class="icon--smm" src="img/icon--smm.png" alt="SMM-кампании" />
+                                        <h4 class="ability--swiper_heading">SMM</h4>
+                                        <div class="clearfix"></div>
+                                        <div class="ability--swiper_content">
+                                            Проведение таргетированной рекламы в соцсетях: “ВКонтакте”, “Одноклассники”, Facebook, LinkedIn и т.д.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide bottom-slide--right">
+                                    <div class="ability--swiper_slide background--light_grey">
+                                        <img class="icon--smm" src="img/icon--seo.png" alt="SEO" />
+                                        <h4 class="ability--swiper_heading">Web-разработка и SEO</h4>
+                                        <div class="clearfix"></div>
+                                        <div class="ability--swiper_content">
+                                            Создание и поисковая оптимизация landing-page мобильного приложения.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="ability--swiper_slide">
-                                    <img class="icon--review" src="img/icon--review.png" alt="размещение обзоров" />
-                                    <h4 class="ability--swiper_heading">Размещение обзоров </h4>
-                                    <div class="clearfix"></div>
-                                    <div class="ability--swiper_content">
-                                        Копирайтинг и размещение обзорных статей на специализированных порталах.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ability--swiper_slide">
-                                    <img class="icon--ppc" src="img/icon--ppc.png" alt="PPC-кампании" />
-                                    <h4 class="ability--swiper_heading">Контекстная реклама</h4>
-                                    <div class="clearfix"></div>
-                                    <div class="ability--swiper_content">
-                                        Проведение кампаний в мобильных рекламных сетях: Google Adwords, Yandex Директ.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ability--swiper_slide">
-                                    <img class="icon--smm" src="img/icon--smm.png" alt="SMM-кампании" />
-                                    <h4 class="ability--swiper_heading">SMM</h4>
-                                    <div class="clearfix"></div>
-                                    <div class="ability--swiper_content">
-                                        Проведение таргетированной рекламы в соцсетях: “ВКонтакте”, “Одноклассники”, Facebook, LinkedIn и т.д.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ability--swiper_slide">
-                                    <img class="icon--smm" src="img/icon--seo.png" alt="SEO" />
-                                    <h4 class="ability--swiper_heading">Web-разработка и SEO</h4>
-                                    <div class="clearfix"></div>
-                                    <div class="ability--swiper_content">
-                                        Создание и поисковая оптимизация landing-page мобильного приложения.
-                                    </div>
-                                </div>
-                            </div>
-                       </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                   <!--ABILITY SLIDER-->
-                   <!--<div class="ability_slider--container">
-                        <div class="abbility_slide">
-                            <img class="icon--aso" src="img/icon--aso.png" alt="ASO" />
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="abbility_slide--xs abbility_slide">
-                            <img class="icon--review" src="img/icon--review.png" alt="размещение обзоров" />
-                        </div>
-                        <div class="abbility_slide--xs abbility_slide">
-                            <img class="icon--ppc" src="img/icon--ppc.png" alt="PPC-кампании" />
-                        </div>
-                        <div class="abbility_slide--xs abbility_slide">
-                            <img class="icon--smm" src="img/icon--smm.png" alt="PPC-кампании" />
-                        </div>
-                        <div class="abbility_slide--xs abbility_slide">
-                            <img class="icon--smm" src="img/icon--seo.png" alt="PPC-кампании" />
-                        </div>-->
-                 <!--END OF ABILITY SLIDER-->   
+                    </div><!--END OF ABILITY SLIDER-->
                 </div><!--END OF CONTENT CONTAINER-->
                 <div class="clearfix"></div>
             </section><!--END OF ABILITY SECTION-->
@@ -347,7 +332,7 @@
 
         document.addEventListener("DOMContentLoaded", function() {
             if (width <1200) {
-                var swiper = new Swiper('.swiper-container', {
+                var swiper = new Swiper('.ability--swiper_container', {
                     pagination: '.swiper-pagination',
                     paginationClickable: true
                 });

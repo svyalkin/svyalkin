@@ -27,16 +27,16 @@ function width(){
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (width() < 768) {
-        header.classList.add("-background_header");
+    if (width < 768) {
+        header.classList.add("background_header");
     }
-    else if (width() < 1024) {
-        header.classList.remove("-background_header");
+    else if (width < 1024) {
+        header.classList.remove("background_header");
     }
-    else if (width() < 1200) {
-        header.classList.add("-background_header");
+    else if (width < 1200) {
+        header.classList.add("background_header");
     }
     else {
-        header.classList.remove("-background_header");
+        header.classList.remove("background_header");
     }
 });

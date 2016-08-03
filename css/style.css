@@ -113,6 +113,7 @@ iframe {
 @media only screen and (min-width:1200px) {
     .header {
         height: 100px;
+        position: absolute;
     }
 }
 .logo {
@@ -201,7 +202,7 @@ close_btn--xs {
     background-size: cover;
 }
 .navigation_container {
-    font-size: 18px;
+    font-size: 16px;
     list-style: none;
     margin: 0;
 }
@@ -209,10 +210,10 @@ close_btn--xs {
     border-top: 1px solid #061421;
 }
 .navigation_content--large {
-    padding:25px 0 15px 35px;
+    padding:20px 0 15px 35px;
 }
 .navigation_content {
-    padding: 15px 0 15px 35px;
+    padding: 10px 0 15px 35px;
 }
 .navigation_item {
     display: inline;
@@ -300,7 +301,7 @@ close_btn--xs {
     }
     .ability {
         height: 862px;
-        padding:33px 0 0;
+        padding: 65px 0 0;
         background: url(../img/ability--t.png) 50% 0% no-repeat fixed #ffffff;
         background-size: cover; 
     }
@@ -338,7 +339,7 @@ close_btn--xs {
     }
     .ability {
         height: 705px;
-        padding:33px 0 0;
+        padding: 67px 0 0;
         background: url(../img/ability--tl.png) 50% 0% no-repeat fixed #ffffff;
         background-size: cover; 
     }
@@ -379,7 +380,7 @@ close_btn--xs {
     }
     .ability {
         height: 1184px;
-        padding:33px 0 0;
+        padding: 80px 0 0;
         background: url(../img/ability--d.png) 50% 10% no-repeat fixed #ffffff;
         background-size: cover; 
     }
@@ -640,7 +641,56 @@ h3 {
 .ability_heading {
     font-size: 18px;
     font-weight: 400;
+    margin: 0 0 38px;
 }
+.swiper--container {
+    padding: 0 23px;
+}
+.ability--swiper_container {
+    height: 410px;
+}
+.ability--swiper_slide {
+    background: #F1F3F5;
+    height: 365px;
+    text-align: center;
+    padding: 100px 0 0;
+}
+.ability--swiper_heading {
+    color: #FF735F;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.ability--swiper_content {
+    font-size: 14px;
+    color: #858890;
+    padding: 0 20px;
+}
+.ability--swiper_container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fd4933 !important;
+}
+.ability--swiper_container .swiper-pagination-bullet {
+    background: #c0c0c0;
+    opacity: 1;
+}
+.ability--swiper_container > .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 12px;
+}
+.ability--swiper_container .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+}
+/*<ABILITY ICONS*/
+.icon--aso,
+.icon--review,
+.icon--ppc,
+.icon--smm,
+.icon--seo {
+    width: 41px;
+    height: 40px;
+}
+/*</ABILITY ICONS>*/
 /*</ABILITY>*/
 /*<PROFIT>*/
 .profit_heading {
@@ -924,6 +974,49 @@ h3 {
         height: 24px;
     }
     /*</SOLUTIONS--ICONS>*/
+    /*<ABILITY>*/
+    .ability_heading {
+        font-size: 36px;
+        font-weight: 300;
+        margin: 0 0 68px;
+    }
+    .swiper--container {
+        padding: 0 176px;
+    }
+    .ability--swiper_container {
+        height: 617px;
+    }
+    .ability--swiper_slide {
+        height: 534px;
+        padding: 130px 0 0;
+    }
+    .ability--swiper_heading {
+        font-size: 22px;
+        margin: 25px 0 15px;
+    }
+    .ability--swiper_content {
+        font-size: 20.5px;
+        color: #858890;
+        padding: 0 20px;
+    }
+    .ability--swiper_container .swiper-pagination-bullet {
+        width: 10.5px;
+        height: 10.5px;
+    }
+    .ability--swiper_container > .swiper-pagination .swiper-pagination-bullet {
+        margin: 0 21px;
+    }
+    /*<ABILITY ICONS>*/
+    .icon--aso,
+    .icon--review,
+    .icon--ppc,
+    .icon--smm,
+    .icon--seo {
+        width: 61px;
+        height: 60px;
+    }
+    /*</ABILITY ICONS>*/
+    /*</ABILITY>*/
     /*<PROFIT>*/
     .profit_heading {
         color: rgb(51, 51, 51);
@@ -1171,6 +1264,49 @@ h3 {
         }
         /*</SOLUTIONS--ICONS>*/
     /*</SOLUTIONS>*/
+    /*<ABILITY>*/
+    .ability_heading {
+        font-size: 36px;
+        font-weight: 300;
+        margin: 0 0 70px;
+    }
+    .swiper--container {
+        padding: 0 230px;
+    }
+    .ability--swiper_container {
+        height: 448px;
+    }
+    .ability--swiper_slide {
+        height: 382px;
+        padding: 63px 0 0;
+    }
+    .ability--swiper_heading {
+        font-size: 22px;
+        margin: 12px 0 15px;
+    }
+    .ability--swiper_content {
+        font-size: 20.5px;
+        color: #858890;
+        padding: 0 100px;
+    }
+    .ability--swiper_container .swiper-pagination-bullet {
+        width: 10.5px;
+        height: 10.5px;
+    }
+    .ability--swiper_container > .swiper-pagination .swiper-pagination-bullet {
+        margin: 0 21px;
+    }
+    /*<ABILITY ICONS>*/
+    .icon--aso,
+    .icon--review,
+    .icon--ppc,
+    .icon--smm,
+    .icon--seo {
+        width: 61px;
+        height: 60px;
+    }
+    /*</ABILITY ICONS>*/
+    /*</ABILITY>*/
     /*<PROFIT>*/
     .profit_heading {
             color: rgb(51, 51, 51);
@@ -1429,6 +1565,84 @@ h3 {
         }
         /*</SOLUTIONS--ICONS>*/
     /*</SOLUTIONS>*/
+    /*<ABILITY*/
+    .ability_heading {
+        font-size: 48px;
+        font-weight: 300;
+        letter-spacing: 0;
+        margin: 0 0 89px;
+    }
+    .swiper--container {
+        padding: 0 70px;
+    }
+    .ability--swiper_container {
+        height: 950px;
+    }
+    .ability--swiper_container .swiper-slide {
+        display: block;
+        float: left;
+        width: 33.333333%;
+        margin: 0;
+    }
+    .ability--swiper_slide {
+        cursor: pointer;
+        height: 475px;
+        padding: 145px 0 0;
+    }
+    .ability--swiper_container .background--light_grey {
+        background: #f1f3f5;
+    }
+    .ability--swiper_container .background--grey {
+        background: #e9ecef;
+    }
+    .ability--swiper_container .bottom-slide--left {
+        margin: 0 0 0 16.666665%;
+    }
+    .ability--swiper_container .bottom-slide--right {
+        margin: 0 16.666665% 0 0;
+    }
+    .ability--swiper_heading {
+        color: #FF735F;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 35px 0 5px;
+    }
+    .ability--swiper_content {
+        display: none;
+        font-size: 16px;
+        color: #858890;
+        padding: 0 40px;
+        line-height: 1.8;
+    }
+    .ability--swiper_slide:hover {
+        padding: 95px 0 0;
+    }
+    .ability--swiper_slide:hover .ability--swiper_content {
+        display: block;
+    }
+    /*<ABILITY ICONS>*/
+        .icon--aso {
+            width: 71px;
+            height: 70px;
+        }
+        .icon--review {
+            width: 77px;
+            height: 69px;
+        }
+        .icon--ppc {
+            width: 68px;
+            height: 68px;
+        }
+        .icon--smm {
+            width: 79px;
+            height: 69px;
+        }
+        .icon--seo {
+            width: 74px;
+            height: 73px;
+        }
+    /*</ABILITY ICONS>*/
+    /*<ABILITY>*/
     /*<PROFIT>*/
     .profit_heading {
         color: rgb(51, 51, 51);
