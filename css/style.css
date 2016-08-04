@@ -273,7 +273,9 @@ close_btn--xs {
     background: #ffffff;
 }
 .clients {
+    position: relative;
     height: 838px;
+    padding: 35px 0 0;
     background: url(../img/clients--sp.png) 50% 0% no-repeat fixed #ffffff;
     background-size: cover; 
 }
@@ -774,6 +776,75 @@ h3 {
     height: 34px;
 }
 /*</PROFIT>*/
+/*<CLIENTS>*/
+.clients_heading {
+    color:#edeff1;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+.clients_content {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 15px;
+    margin: 0 0 40px; 
+}
+.clients--swiper_container {
+    height: 445px;
+}
+.clients_swiper--wrapper {
+    width:195px;
+    margin: 0 auto;
+}
+.clients--swiper_slide {
+    background: url(../img/clients--phone--xs.png) no-repeat;
+    width: 195px;
+    height: 399px;
+    padding: 47px 13px 45px;
+}
+.clients--swiper_slide--wrapper {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 304px;
+    padding: 40px 7px 0;
+    text-align: center;
+}
+.clients--swiper_heading {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    margin: 25px 0 10px;
+}
+.clients--swiper_content {
+    color: #a2a7aa;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+.clients--swiper_container > .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 12px;
+}
+.clients--swiper_container .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+}
+.clients--swiper_container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fd4933 !important;
+}
+.clients--swiper_container .swiper-pagination-bullet {
+    background: #c0c0c0;
+    opacity: 1;
+}
+.clients_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 12, 28, 0.502);
+    padding: 32px 0 35px;
+}
+/*</CLIENTS>*/
 @media only screen and (min-width:768px) and (max-width:1023px) {
     /*<--MAIN-->*/
     .main_heading {
@@ -799,8 +870,18 @@ h3 {
         padding: 0 15px;
     }
     .main_footnote_content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
         padding: 0 0 25px;
         margin: 39px 0 0;
     }
@@ -1061,6 +1142,11 @@ h3 {
         line-height: 1.5;
     }
     /*</PROFIT>*/
+    /*<CLIENTS>*/
+    .clients_swiper--wrapper {
+        width:700px;
+    }
+    /*</CLIENTS>*/
 }
 @media only screen and (min-width:1024px) and (max-width:1199px) {
     /*<--MAIN-->*/
@@ -1085,8 +1171,18 @@ h3 {
     .main_footnote_content {
         margin: 0 -17px;
         padding: 0 0 0 43px;/*THIS HACK HELPS TO DISPLAY CONTENT CENTERD*/
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
     }
     .main_footnote_item {
         position: relative;

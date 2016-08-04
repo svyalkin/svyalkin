@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/css/swiper.min.css" media="(max-width:1199px)">
     <link href="css/style.css" rel="stylesheet" >
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
     <!--WRAPPER-->
@@ -195,7 +196,7 @@
                     <h2 class="ability_heading">Что мы умеем?</h2>
                     <!--ABILITY SLIDER-->
                     <div class="swiper--container">
-                        <div class="ability--swiper_container swiper-container">
+                        <div class="ability--swiper_container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="ability--swiper_slide background--light_grey">
@@ -310,6 +311,77 @@
             </section><!--END OF PROFIT SECTION-->
             <!--CLIENTS SECTION-->
             <section id="clients" class="clients">
+                <!--CONTENT CONTAINER-->
+                <div class="content_container">
+                    <h2 class="clients_heading">Кто является нашим клиентом?</h2>
+                    <article class="clients_content">
+                        Наши клиенты — компании,<i class="br xs"></i> только что запустившие<i class="br xs"></i> мобильное приложение, рассчитанное (пока) на небольшой рынок — до 10 000 пользователей. Мы продвигаем приложение вне зависимости от их направления:
+                    </article>
+                    <div class="clients_swiper--wrapper">
+                        <div id="clients--swiper_container" class="clients--swiper_container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="clients--swiper_slide">
+                                        <div class="clients--swiper_slide--wrapper">
+                                            <img class="icon--box" src="img/icon--box.png" alt="Розничная торговля" />
+                                            <h4 class="clients--swiper_heading">Розничная торговля.</h4>
+                                            <div class="clearfix"></div>
+                                            <div class="clients--swiper_content">
+                                                Магазины, интернет-магазины, торговые центры и т.п.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients--swiper_slide">
+                                        <div class="clients--swiper_slide--wrapper">
+                                            <img class="icon--user" src="img/icon--user.png" alt="Обслуживание населения" />
+                                            <h4 class="clients--swiper_heading">Обслуживание населения</h4>
+                                            <div class="clearfix"></div>
+                                            <div class="clients--swiper_content">
+                                                Медклиники, автошколы, лингвоцентры, гостиницы и т.п.
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients--swiper_slide">
+                                        <div class="clients--swiper_slide--wrapper">
+                                            <img class="icon--party" src="img/icon--party.png" alt="Обслуживание населения" />
+                                            <h4 class="clients--swiper_heading">Досуг и развлечение</h4>
+                                            <div class="clearfix"></div>
+                                            <div class="clients--swiper_content">
+                                                Кинотеатры, ночные клубы, школы танцев, фитнес-центры и т.п.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients--swiper_slide">
+                                        <div class="clients--swiper_slide--wrapper">
+                                            <img class="icon--food" src="img/icon--food.png" alt="Общественное питание" />
+                                            <h4 class="clients--swiper_heading">Общественное питание</h4>
+                                            <div class="clearfix"></div>
+                                            <div class="clients--swiper_content">
+                                                Рестораны, кафе, пиццерии, суши-бары и т.п.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div><!--END OF CONTANT CONTAINER-->
+                <!--CLIENTS FOOTER-->
+                <div class="clients_footer">
+                    <!--CONTENT CONTAINER-->
+                    <div class="content_container">
+                        <div class="btn_wrapper">
+                            <button class="btn">Воспользоваться предложением</button>
+                        </div>
+                    </div><!--END OF CONTENT CONTAINER-->
+                </div><!--END OF CLIENTS FOOTER-->
                 <div class="clearfix"></div>
             </section><!--END OF CLIENTS SECTION-->
             <!--STAGES SECTION-->
@@ -325,19 +397,8 @@
         <footer class="footer" role="contentinfo"></footer><!--END OF FOOTER-->
     </div><!--END OF WRAPPER-->
     <!--SCRIPTS-->
-    <script src="js/menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/js/swiper.min.js"></script>
-    <script>
-        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-        document.addEventListener("DOMContentLoaded", function() {
-            if (width <1200) {
-                var swiper = new Swiper('.ability--swiper_container', {
-                    pagination: '.swiper-pagination',
-                    paginationClickable: true
-                });
-            }
-        })
-    </script>
+    <script src="js/menu.js"></script>
+    <script src="js/swipe.js"></script>
 </body>
 </html>
