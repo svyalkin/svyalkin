@@ -120,9 +120,14 @@ iframe {
     float: left;
     padding: 17px 0 0;
 }
-@media only screen and (min-width:768px) and (max-width:1023px) {
+@media only screen and (min-width: 1024px) and (max-width:1199px) {
     .logo {
-        padding: 22px 0 0;
+        padding: 24px 0 0;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .logo {
+        padding: 38px 0 0;
     }
 }
 .logo--xs {
@@ -144,6 +149,7 @@ iframe {
     }
 }
 .hamburger_btn {
+    cursor: pointer;
     display: block;
     float:right;
     padding: 24px 0 0;
@@ -156,27 +162,118 @@ iframe {
 .hamburger_btn--t--tl--d {
     display: none;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:768px) and (max-width:1023px) {
     .hamburger_btn {
         padding: 29px 0 0;
     }
     .hamburger_btn--xs {
-        display: none;
-        width: 30px;
-        height: 21px;
+        display: none;       
     }
     .hamburger_btn--t--tl--d {
         display: block;
+        width: 30px;
+        height: 21px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .hamburger_btn {
+        padding: 29px 0 0;
+    }
+    .hamburger_btn--xs {
+        display: none;       
+    }
+    .hamburger_btn--t--tl--d {
+        display: block;
+        width: 30px;
+        height: 21px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .hamburger_btn {
+        padding: 46px 0 0;
     }
 }
 .close_btn {
+    cursor: pointer;
     display: none;
     float: right;
     padding: 17px 0 0;
 }
-close_btn--xs {
+.close_btn--xs {
+    cursor: pointer;
     width: 24px;
     height: 24px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .close_btn {
+        padding: 28px 0 0 6px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .close_btn {
+        padding: 42px 0 0 1px;
+    }
+}
+.phone {
+    display: none;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .phone {
+        display: block;
+        position: relative;
+        float: right;
+        font-size: 16px;
+        margin: 30px 0 0;
+        padding: 0 55px 0 20px;
+        letter-spacing: 0;
+    }
+    .phone:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        background: url(../img/icon--call.png) no-repeat;
+        width: 14px;
+        height: 14px;
+    }
+    .phone::after {
+        content: "";
+        position: absolute;
+        right: 25px;
+        top: -5px;
+        background: url(../img/line.png) no-repeat;
+        width: 1px;
+        height: 31px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .phone {
+        display: block;
+        position: relative;
+        float: right;
+        font-size: 18px;
+        margin: 41px 0 0;
+        padding: 0 55px 0 22px;
+        letter-spacing: 0;
+    }
+    .phone:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        background: url(../img/icon--call.png) no-repeat;
+        width: 14px;
+        height: 14px;
+    }
+    .phone::after {
+        content: "";
+        position: absolute;
+        right: 35px;
+        top: -1.5px;
+        background: url(../img/line.png) no-repeat;
+        width: 1px;
+        height: 31px;
+    }
 }
 /*NAVIGATION*/
 .navigation {
@@ -184,10 +281,10 @@ close_btn--xs {
     width: 100%;
     height: 100vh;
     position: fixed;
-    bottom: 0;
+    top: 66px;
     left: 0;
     right: 0;
-    padding: 66px 0 0;
+    padding: 0;
     z-index: 9998;
 }
 .navigation_background {
@@ -195,7 +292,7 @@ close_btn--xs {
     height: 100%;
     display: block;
     position: fixed;
-    bottom: 0;
+    top: 66px;
     left: 0;
     right: 0;
     background: rgba(7, 20, 33, 0.4) no-repeat;
@@ -225,7 +322,7 @@ close_btn--xs {
 .navigation_footer {
     width: 150px;
     position: absolute;
-    bottom: 0;
+    bottom: 66px;
     left: 0;
     right: 0;
     margin:0 auto;
@@ -234,6 +331,69 @@ close_btn--xs {
 }
 .navigation_footer img {
     vertical-align: bottom;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .navigation {
+        display: block;
+        float: left;
+        position: static;
+        height: auto;
+        width: auto;
+        padding: 0;
+        margin: 34px 0 0 22px;
+        z-index: 9999;
+        font-weight: 300;
+    }
+    .navigation_container {
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .navigation_background {
+        display: none;
+    }
+    .navigation_content--large, .navigation_content {
+        display: inline-block;
+        padding: 0 2px;
+        border: none;
+    }
+    .navigation_item {
+        padding: 0 6px 34px;
+    }
+    .navigation_footer {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .navigation {
+        display: block;
+        float: left;
+        position: static;
+        height: auto;
+        width: auto;
+        padding: 0;
+        margin: 46px 0 0 27px;
+        z-index: 9999;
+        font-weight: 300;
+    }
+    .navigation_container {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    .navigation_background {
+        display: none;
+    }
+    .navigation_content--large,
+    .navigation_content {
+        display: inline-block;
+        padding: 0 6px;
+        border: none;
+    }
+    .navigation_item {
+        padding: 0 6px 34px;
+    }
+    .navigation_footer {
+        display: none;
+    }
 }
 /*FOOTER*/
 .footer_icon--call {
@@ -312,7 +472,9 @@ close_btn--xs {
         background: #ffffff;
     }
     .clients {
-        height: 838px;
+        position: relative;
+        height: 1023px;
+        padding: 65px 0 0;
         background: url(../img/clients--t.png) 50% 0% no-repeat fixed #ffffff;
         background-size: cover; 
     }
@@ -351,6 +513,7 @@ close_btn--xs {
     }
     .clients {
         height: 975px;
+        padding: 70px 0 0;
         background: url(../img/clients--tl.png) 50% 0% no-repeat fixed #ffffff;
         background-size: cover; 
     }
@@ -369,7 +532,7 @@ close_btn--xs {
 @media only screen and (min-width: 1200px) {
     .main {
     height: 980px;
-    background: url(../img/main--d.png) 50% 50% no-repeat fixed #ffffff;
+    background: url(../img/main--d.png) 50% 0% no-repeat fixed #ffffff;
     background-size: cover;
     padding: 280px 0 0;
     }
@@ -383,7 +546,7 @@ close_btn--xs {
     .ability {
         height: 1184px;
         padding: 80px 0 0;
-        background: url(../img/ability--d.png) 50% 10% no-repeat fixed #ffffff;
+        background: url(../img/ability--d.png) 50% 0% no-repeat fixed #ffffff;
         background-size: cover; 
     }
     .profit {
@@ -392,7 +555,8 @@ close_btn--xs {
     }
     .clients {
         height: 1139px;
-        background: url(../img/clients--d.png) 50% 10% no-repeat fixed #ffffff;
+        padding: 80px 0 0;
+        background: url(../img/clients--d.png) 50% 0% no-repeat fixed #ffffff;
         background-size: cover; 
     }
     .stages {
@@ -403,7 +567,7 @@ close_btn--xs {
     .contacts {
         height: 983px;
         padding:35px 0 40px;
-        background: url(../img/contacts--d.png) 50% 10% no-repeat fixed #ffffff;
+        background: url(../img/contacts--d.png) 50% 0% no-repeat fixed #ffffff;
         background-size: cover; 
     }
 }
@@ -1143,8 +1307,73 @@ h3 {
     }
     /*</PROFIT>*/
     /*<CLIENTS>*/
+    .clients_heading {
+        font-size: 36px;
+        margin: 0 0 5px;
+    }
+    .clients_content {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 90px;
+    margin: 0 0 55px; 
+    }
+    .clients--swiper_container {
+        height: 540px;
+    }
     .clients_swiper--wrapper {
-        width:700px;
+        width:515px;
+        margin: 0 auto;
+    }
+    .clients--swiper_slide {
+        background: url(../img/clients--phone.png) no-repeat;
+        width: 225px;
+        height: 460px;
+        padding: 54px 14px;
+        background-size: 100%;
+    }
+    .clients--swiper_slide--wrapper {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 350px;
+        padding: 50px 9px 0;
+        text-align: center;
+    }
+    .clients--swiper_heading {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        margin: 25px 0 10px;
+    }
+    .clients--swiper_content {
+        color: #a2a7aa;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.65;
+        text-align: left;
+    }
+    .clients--swiper_container > .swiper-pagination .swiper-pagination-bullet {
+        margin: 0 21px;
+    }
+    .clients--swiper_container .swiper-pagination-bullet {
+        width: 10.5px;
+        height: 10.5px;
+    }
+    .clients--swiper_container .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #fd4933 !important;
+    }
+    .clients--swiper_container .swiper-pagination-bullet {
+        background: #c0c0c0;
+        opacity: 1;
+    }
+    .clients_footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 12, 28, 0.502);
+        padding: 61px 0;
     }
     /*</CLIENTS>*/
 }
@@ -1359,6 +1588,7 @@ h3 {
             height: 24px;
         }
         /*</SOLUTIONS--ICONS>*/
+        
     /*</SOLUTIONS>*/
     /*<ABILITY>*/
     .ability_heading {
@@ -1456,6 +1686,76 @@ h3 {
         line-height: 1.4;
     }
     /*</PROFIT>*/
+    /*<CLIENTS>*/
+    .clients_heading {
+        font-size: 36px;
+        margin: 0 0 5px;
+    }
+    .clients_content {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 195px;
+    margin: 0 0 55px; 
+    }
+    .clients--swiper_container {
+        height: 540px;
+    }
+    .clients_swiper--wrapper {
+        width:515px;
+        margin: 0 auto;
+    }
+    .clients--swiper_slide {
+        background: url(../img/clients--phone.png) no-repeat;
+        width: 225px;
+        height: 460px;
+        padding: 54px 14px;
+        background-size: 100%;
+    }
+    .clients--swiper_slide--wrapper {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 350px;
+        padding: 50px 9px 0;
+        text-align: center;
+    }
+    .clients--swiper_heading {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        margin: 25px 0 10px;
+    }
+    .clients--swiper_content {
+        color: #a2a7aa;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.65;
+        text-align: left;
+    }
+    .clients--swiper_container > .swiper-pagination .swiper-pagination-bullet {
+        margin: 0 21px;
+    }
+    .clients--swiper_container .swiper-pagination-bullet {
+        width: 10.5px;
+        height: 10.5px;
+    }
+    .clients--swiper_container .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #fd4933 !important;
+    }
+    .clients--swiper_container .swiper-pagination-bullet {
+        background: #c0c0c0;
+        opacity: 1;
+    }
+    .clients_footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 12, 28, 0.502);
+        padding: 50px 0 55px;
+    }
+    /*</CLIENTS>*/
 }
 @media only screen and (min-width:1200px) {
     /*<--MAIN-->*/
@@ -1674,13 +1974,11 @@ h3 {
     .ability--swiper_container {
         height: 950px;
     }
-    .ability--swiper_container .swiper-slide {
+    .ability--swiper_slide {
         display: block;
         float: left;
         width: 33.333333%;
         margin: 0;
-    }
-    .ability--swiper_slide {
         cursor: pointer;
         height: 475px;
         padding: 145px 0 0;
@@ -1738,7 +2036,7 @@ h3 {
             height: 73px;
         }
     /*</ABILITY ICONS>*/
-    /*<ABILITY>*/
+    /*</ABILITY>*/
     /*<PROFIT>*/
     .profit_heading {
         color: rgb(51, 51, 51);
@@ -1807,6 +2105,44 @@ h3 {
         line-height: 1.6;
     }
     /*</PROFIT>*/
+    /*<CLIENTS>*/
+    .clients_heading {
+        font-size: 48px;
+        margin: 0 0 25px;
+    }
+    .clients_content {
+        font-size: 18px;
+        line-height: 1.65;
+        padding: 0 195px;
+        margin: 0 0 82px;
+    }
+    .clients_swiper--wrapper {
+        width: 1070px;
+    }
+    .clients--swiper_slide {
+        display: block;
+        float: left;
+        background: url(../img/clients--phone.png) no-repeat;
+        width: 217px;
+        height: 442px;
+        padding: 52px 14px 50px;
+    }
+    .clients--swiper_slide--wrapper {
+        height: 340px;
+    }
+    .mr65 {
+        margin: 0 65px 0 0;
+    }
+    .clients--swiper_heading {
+        font-size: 18px;
+    }
+    .clients--swiper_content {
+        font-size: 12px;
+    }
+    .clients_footer {
+        padding: 102px 0 105px;
+    } 
+    /*</CLIENTS>*/
 }
 /*BUTTON*/
 .btn {
@@ -1871,4 +2207,28 @@ h3 {
 .br:before {
     content: "\A";
     word-wrap: pre;
+}
+.delay-onesecond {
+    -webkit-animation-delay: 1.0s;
+    -moz-animation-delay: 1.0s;
+    -o-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+}
+.delay-halfsecond {
+    -webkit-animation-delay: 0.50s;
+    -moz-animation-delay: 0.50s;
+    -o-animation-delay: 0.50s;
+    animation-delay: 0.50s;
+}
+.delay-onea_and_halfsecond {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.delay-twosecond {
+    -webkit-animation-delay: 2.0s;
+    -moz-animation-delay: 2.0s;
+    -o-animation-delay: 2.0s;
+    animation-delay: 2.0s;
 }

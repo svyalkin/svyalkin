@@ -1,11 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/css/swiper.min.css" media="(max-width:1199px)">
+    <link rel="stylesheet" href="dist/Swiper/dist/css/swiper.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/style.css" rel="stylesheet" >
     <script src="js/jquery.min.js"></script>
 </head>
@@ -18,10 +19,43 @@
             <div class="content_container">
                 <!--HEADER CONTAINER-->
                 <div class="header_container">
+                    <!--LOGO-->
                     <div class="logo">
                         <img class="logo--xs" src="img/logo--xs.png" alt="IT-Grands"/>
                         <img class="logo--t--tl--d" src="img/logo--t--tl--d.png" alt="IT-Grands"/>
-                    </div>
+                    </div><!--END OF LOGO-->
+                    <!--NAVIGATION-->
+                    <nav class="navigation" role="navigation">
+                        <!--NAVIGATION BACKGROUND-->
+                        <div class="navigation_background"></div><!--END OF NAVIGATION BACKGROUND-->
+                        <!--NAVIGATION CONTAINER-->
+                        <ul class="navigation_container">
+                            <li class="navigation_content--large">
+                                <a href="#solutions" class="navigation_item">Наш подход</a>
+                            </li>
+                            <li class="navigation_content">
+                                <a href="#ability" class="navigation_item">Что мы умеем</a>
+                            </li>
+                            <li class="navigation_content">
+                                <a href="#profit" class="navigation_item">Что получаете вы</a>
+                            </li>
+                            <li class="navigation_content">
+                                <a href="#clients" class="navigation_item">Кто наш клиент?</a>
+                            </li>
+                            <li class="navigation_content">
+                                <a href="#stages"  class="navigation_item">Этапы работы</a>
+                            </li>
+                            <li class="navigation_content">
+                                <a href="#contacts"  class="navigation_item">Контакты</a>    
+                            </li>
+                        </ul><!--END OF NAVIGATION CONTAINER-->
+                        <!--NAVIGATION FOOTER-->
+                        <div class="navigation_footer">
+                            <img class="footer_icon--call" src="img/footer_icon--call.png" alt="звоните">
+                            <img class="footer_icon--email" src="img/footer_icon--email.png" alt="пишите">
+                            <img class="footer_icon--map" src="img/footer_icon--map.png" alt="приходите">
+                        </div><!--END OF NAVIGATION FOOTER-->
+                    </nav><!--END OF NAVIGATION-->
                     <div class="hamburger_btn">
                         <img class="hamburger_btn--xs" src="img/hamburger_btn--xs.png" alt="Открыть меню"/>
                         <img class="hamburger_btn--t--tl--d" src="img/hamburger_btn--t--tl--d.png" alt="Открыть меню"/>
@@ -29,50 +63,24 @@
                     <div class="close_btn">
                         <img class="close_btn--xs" src="img/close_btn.png" alt="Закрыть меню"/>
                     </div>
+                    <!--PHONE-->
+                    <div class="phone">
+                        8-800-333-34-68
+                    </div>
+                    <!--PHONE-->
                 </div><!--END OF NAVIGATION CONTAINER-->
             </div><!--END OF CONTENT CONTAINER-->
         </header><!--END OF HEADER-->
-        <!--NAVIGATION-->
-        <nav class="navigation" role="navigation">
-            <!--NAVIGATION BACKGROUND-->
-            <div class="navigation_background"></div><!--END OF NAVIGATION BACKGROUND-->
-            <!--NAVIGATION CONTAINER-->
-            <ul class="navigation_container">
-                <li class="navigation_content--large">
-                    <a href="#solutions" class="navigation_item">Наш подход</a>
-                </li>
-                <li class="navigation_content">
-                    <a href="#ability" class="navigation_item">Что мы умеем</a>
-                </li>
-                <li class="navigation_content">
-                    <a href="#profit" class="navigation_item">Что получаете вы</a>
-                </li>
-                <li class="navigation_content">
-                    <a href="#clients" class="navigation_item">Кто наш клиент?</a>
-                </li>
-                <li class="navigation_content">
-                    <a href="#stages"  class="navigation_item">Этапы работы</a>
-                </li>
-                <li class="navigation_content">
-                    <a href="#contacts"  class="navigation_item">Контакты</a>    
-                </li>
-            </ul><!--END OF NAVIGATION CONTAINER-->
-            <!--NAVIGATION FOOTER-->
-            <div class="navigation_footer">
-                <img class="footer_icon--call" src="img/footer_icon--call.png" alt="звоните">
-                <img class="footer_icon--email" src="img/footer_icon--email.png" alt="пишите">
-                <img class="footer_icon--map" src="img/footer_icon--map.png" alt="приходите">
-            </div><!--END OF NAVIGATION FOOTER-->
-        </nav><!--END OF NAVIGATION-->
+       
         <!--MAIN WRAPPER FOR BLUR EFFECT-->
         <main class="content" role="main">
             <!--MAIN SECTION-->
             <section id="main" class="main">
                 <!--CONTENT CONTAINER-->
                 <div class="content_container">
-                    <h1 class="main_heading">Качественное продвижение Android-приложений</h1>
-                    <p class="main_feature">Привлекаем только немотивированный трафик. Вы платите только за установки.</p>
-                    <div class="btn_wrapper">
+                    <h1 class="main_heading animated fadeInDown">Качественное продвижение Android-приложений</h1>
+                    <p class="main_feature animated fadeIn delay-halfsecond">Привлекаем только немотивированный трафик. Вы платите только за установки.</p>
+                    <div class="btn_wrapper animated fadeIn delay-onesecond">
                         <button class="btn">Воспользоваться предложением</button>
                     </div>
                 </div><!--END OF CONTENT CONTAINER-->
@@ -80,21 +88,21 @@
                 <div class="main_footnote">
                     <!--CONTENT CONTAINER-->
                     <div class="content_container">
-                        <h3 class="main_footnote_heading">Воспользуйтесь нашим промопакетом* для мобильных Android-приложений:</h3>
+                        <h3 class="main_footnote_heading animated fadeIn delay-onesecond">Воспользуйтесь нашим промопакетом* для мобильных Android-приложений:</h3>
                         <div class="clearfix"></div>
                         <!--FOOTNOTE CONTENT-->
                         <div class="main_footnote_content">
-                            <div class="main_footnote_item">1000 немотивированных установок</div>
-                            <div class="main_footnote_item">1000 у.е.**</div>
-                            <div class="main_footnote_item">1 месяц работы</div>
+                            <div class="main_footnote_item animated fadeIn delay-onea_and_halfsecond">1000 немотивированных установок</div>
+                            <div class="main_footnote_item animated fadeIn delay-onea_and_halfsecond">1000 у.е.**</div>
+                            <div class="main_footnote_item animated fadeIn delay-onea_and_halfsecond">1 месяц работы</div>
                         </div><!--END OF FOOTNOTE CONTENT-->
                     </div><!--END OF CONTENT CONTAINER-->
                     <!--FOOTNOTE FOOTER-->
                     <div class="main_footnote_footer">
                         <!--CONTENT CONTAINER-->
                         <div class="content_container">
-                            <span class="main_footnote_footer_item">* Данное предложение недействительно для некоторых мобильных приложений ввиду несоответствия их ЦА, указанным в пропомопакете целям. действительность предложения по промопакету определяется после получения от Заказчика необходимых маркетинговых данных.</span> 
-                            <span class="main_footnote_footer_item">** 1 у.е. = 70 руб.</span>
+                            <span class="main_footnote_footer_item animated  fadeIn delay-twosecond">* Данное предложение недействительно для некоторых мобильных приложений ввиду несоответствия их ЦА, указанным в пропомопакете целям. действительность предложения по промопакету определяется после получения от Заказчика необходимых маркетинговых данных.</span> 
+                            <span class="main_footnote_footer_item animated  fadeIn delay-twosecond">** 1 у.е. = 70 руб.</span>
                         </div><!--END OF CONTENT CONTAINER-->
                     </div><!--END OF FOOTNOTE FOOTER-->
                 </div><!--END FOOTNOTE CONTAINER-->    
@@ -228,8 +236,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide bottom-slide--left">
-                                    <div class="ability--swiper_slide background--grey">
+                                <div class="swiper-slide">
+                                    <div class="ability--swiper_slide bottom-slide--left background--grey">
                                         <img class="icon--smm" src="img/icon--smm.png" alt="SMM-кампании" />
                                         <h4 class="ability--swiper_heading">SMM</h4>
                                         <div class="clearfix"></div>
@@ -238,8 +246,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide bottom-slide--right">
-                                    <div class="ability--swiper_slide background--light_grey">
+                                <div class="swiper-slide">
+                                    <div class="ability--swiper_slide bottom-slide--right background--light_grey">
                                         <img class="icon--smm" src="img/icon--seo.png" alt="SEO" />
                                         <h4 class="ability--swiper_heading">Web-разработка и SEO</h4>
                                         <div class="clearfix"></div>
@@ -318,10 +326,10 @@
                         Наши клиенты — компании,<i class="br xs"></i> только что запустившие<i class="br xs"></i> мобильное приложение, рассчитанное (пока) на небольшой рынок — до 10 000 пользователей. Мы продвигаем приложение вне зависимости от их направления:
                     </article>
                     <div class="clients_swiper--wrapper">
-                        <div id="clients--swiper_container" class="clients--swiper_container">
+                        <div class="clients--swiper_container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="clients--swiper_slide">
+                                    <article class="clients--swiper_slide mr65">
                                         <div class="clients--swiper_slide--wrapper">
                                             <img class="icon--box" src="img/icon--box.png" alt="Розничная торговля" />
                                             <h4 class="clients--swiper_heading">Розничная торговля.</h4>
@@ -330,11 +338,11 @@
                                                 Магазины, интернет-магазины, торговые центры и т.п.
                                             </div>
                                         </div>
-                                    </div>
+                                    </article>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="clients--swiper_slide">
-                                        <div class="clients--swiper_slide--wrapper">
+                                    <article class="clients--swiper_slide mr65">
+                                        <div class="clients--swiper_slide--wrapper ">
                                             <img class="icon--user" src="img/icon--user.png" alt="Обслуживание населения" />
                                             <h4 class="clients--swiper_heading">Обслуживание населения</h4>
                                             <div class="clearfix"></div>
@@ -342,10 +350,10 @@
                                                 Медклиники, автошколы, лингвоцентры, гостиницы и т.п.
                                             </div>
                                         </div> 
-                                    </div>
+                                    </article>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="clients--swiper_slide">
+                                    <article class="clients--swiper_slide mr65">
                                         <div class="clients--swiper_slide--wrapper">
                                             <img class="icon--party" src="img/icon--party.png" alt="Обслуживание населения" />
                                             <h4 class="clients--swiper_heading">Досуг и развлечение</h4>
@@ -354,10 +362,10 @@
                                                 Кинотеатры, ночные клубы, школы танцев, фитнес-центры и т.п.
                                             </div>
                                         </div>
-                                    </div>
+                                    </article>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="clients--swiper_slide">
+                                    <article class="clients--swiper_slide">
                                         <div class="clients--swiper_slide--wrapper">
                                             <img class="icon--food" src="img/icon--food.png" alt="Общественное питание" />
                                             <h4 class="clients--swiper_heading">Общественное питание</h4>
@@ -366,7 +374,7 @@
                                                 Рестораны, кафе, пиццерии, суши-бары и т.п.
                                             </div>
                                         </div>
-                                    </div>
+                                    </article>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -386,6 +394,7 @@
             </section><!--END OF CLIENTS SECTION-->
             <!--STAGES SECTION-->
             <section id="stages" class="stages">
+                <!--CONTENT CONTAINER-->
                 <div class="clearfix"></div>
             </section><!--END OF STAGES SECTION-->
             <!--CONTACTS SECTION-->
@@ -397,8 +406,13 @@
         <footer class="footer" role="contentinfo"></footer><!--END OF FOOTER-->
     </div><!--END OF WRAPPER-->
     <!--SCRIPTS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+    <script src="dist/Swiper/dist/js/swiper.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/swipe.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal();
+    </script>
 </body>
 </html>
