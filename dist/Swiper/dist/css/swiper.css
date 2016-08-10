@@ -14,7 +14,8 @@
  */
 .clients--swiper_container,
 .swiper-container,
-.ability--swiper_container {
+.ability--swiper_container,
+.stages--swiper_container {
   margin: 0 auto;
   position: relative;
   overflow: hidden;

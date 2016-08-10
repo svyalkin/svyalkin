@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/animate.css">
     <link href="css/style.css" rel="stylesheet" >
     <script src="js/jquery.min.js"></script>
+    <script src=""></script>
 </head>
 <body>
     <!--WRAPPER-->
     <div class="wrapper">
         <!--HEADER-->
-        <header class="header" role="banner">
+        <header class="header background_header" role="banner">
             <!--CONTENT CONTAINER-->
             <div class="content_container">
                 <!--HEADER CONTAINER-->
@@ -75,13 +76,13 @@
         <!--MAIN WRAPPER FOR BLUR EFFECT-->
         <main class="content" role="main">
             <!--MAIN SECTION-->
-            <section id="main" class="main">
+            <section id="main" class="main anc_links">
                 <!--CONTENT CONTAINER-->
                 <div class="content_container">
                     <h1 class="main_heading animated fadeInDown">Качественное продвижение Android-приложений</h1>
                     <p class="main_feature animated fadeIn delay-halfsecond">Привлекаем только немотивированный трафик. Вы платите только за установки.</p>
                     <div class="btn_wrapper animated fadeIn delay-onesecond">
-                        <button class="btn">Воспользоваться предложением</button>
+                        <a href="#contacts" class="btn">Воспользоваться предложением</a>
                     </div>
                 </div><!--END OF CONTENT CONTAINER-->
                 <!--MAIN FOOTNOTE-->
@@ -109,7 +110,7 @@
                 <div class="clearfix"></div>
             </section><!--END OF MAIN SECTION-->
             <!--SOLUTIONS SECTION-->
-            <section id="solutions" class="solutions">
+            <section id="solutions" class="solutions anc_links">
                 <!--CONTENT CONTAINER-->
                 <div class="content_container">
                     <h2 class="solutions_heading">Наши решения Ваших проблем</h2>
@@ -198,7 +199,7 @@
                 <div class="clearfix"></div>
             </section><!--END OF SOLUTIONS SECTION-->
             <!--ABILITY SECTION-->
-            <section id="ability" class="ability">
+            <section id="ability" class="ability anc_links">
                 <!--CONTENT CONTAINER-->
                 <div class="content_container">
                     <h2 class="ability_heading">Что мы умеем?</h2>
@@ -264,7 +265,7 @@
                 <div class="clearfix"></div>
             </section><!--END OF ABILITY SECTION-->
             <!--PROFIT SECTION-->
-            <section id="profit" class="profit">
+            <section id="profit" class="profit anc_links">
                 <!--CONTENT CONTAINER-->
                     <div class="content_container">
                         <h2 class="profit_heading">Что получаете Вы?</h2>
@@ -318,12 +319,12 @@
                 <div class="clearfix"></div>
             </section><!--END OF PROFIT SECTION-->
             <!--CLIENTS SECTION-->
-            <section id="clients" class="clients">
+            <section id="clients" class="clients anc_links">
                 <!--CONTENT CONTAINER-->
                 <div class="content_container">
                     <h2 class="clients_heading">Кто является нашим клиентом?</h2>
                     <article class="clients_content">
-                        Наши клиенты — компании,<i class="br xs"></i> только что запустившие<i class="br xs"></i> мобильное приложение, рассчитанное (пока) на небольшой рынок — до 10 000 пользователей. Мы продвигаем приложение вне зависимости от их направления:
+                        Наши клиенты — компании,<i class="br xs"></i> только что запустившие<i class="br xs"></i> мобильное приложение,<strong> рассчитанное (пока) на небольшой рынок — до 10 000 пользователей.</strong> Мы продвигаем приложение вне зависимости от их направления:
                     </article>
                     <div class="clients_swiper--wrapper">
                         <div class="clients--swiper_container">
@@ -386,24 +387,141 @@
                     <!--CONTENT CONTAINER-->
                     <div class="content_container">
                         <div class="btn_wrapper">
-                            <button class="btn">Воспользоваться предложением</button>
+                            <a href="#contacts" class="btn">Воспользоваться предложением</a>
                         </div>
                     </div><!--END OF CONTENT CONTAINER-->
                 </div><!--END OF CLIENTS FOOTER-->
                 <div class="clearfix"></div>
             </section><!--END OF CLIENTS SECTION-->
             <!--STAGES SECTION-->
-            <section id="stages" class="stages">
+            <section id="stages" class="stages anc_links">
                 <!--CONTENT CONTAINER-->
+                <div class="content_container">
+                    <h2 class="stages_heading">У нас простой порядок<i class="br xs"></i> работы -<i class="br t"></i> в 5 шагов</h2>
+                    <p class="stages_discription">Как правило, наша работа состоит из следующих этапов:</p>
+                    <!--WIZARD-->
+                    <div class="stages_wizard">
+                        <div class="wizard_circle wizard--brif"></div>
+                        <div class="wizard_line--wide"></div>
+                        <div class="wizard_circle wizard--offering"></div>
+                        <div class="wizard_line"></div>
+                        <div class="wizard_circle wizard--agreement"></div>
+                        <div class="wizard_line"></div>
+                        <div class="wizard_circle wizard--payment"></div>
+                        <div class="wizard_line--wide"></div>
+                        <div class="wizard_circle wizard--promotion"></div>
+                    </div><!--END OF WIZARD-->
+                    <div class="clearfix"></div>
+                    <!--WIZARDSTEPS-->
+                    <div class="stages_wizardsteps">
+                        <div class="wizardsteps--brif">Бриф</div>
+                        <div class="wizardsteps--offering">Предложение</div>
+                        <div class="wizardsteps--agreement">Договор</div>
+                        <div class="wizardsteps--payment">Оплата</div>
+                        <div class="wizardsteps--promotion">Продвижение</div>
+                    </div><!--END OF WIZARDSTEPS-->
+                    <!--STAGES SWIPER-->
+                    <div class="stages_swiper--container">
+                        <div class="stages--swiper_container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="stages--swiper_slide slide--brief">
+                                        <h3 class="stages--swiper_heading">Шаг 1</h3>
+                                        <div class="stages--swiper_content">
+                                            Заполнение Заказчиком короткого брифа.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stages--swiper_slide slide--brif">
+                                        <h3 class="stages--swiper_heading">Шаг 2</h3>
+                                        <div class="stages--swiper_content">
+                                            Подготовка коммерческого предложения.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stages--swiper_slide slide--offering">
+                                        <h3 class="stages--swiper_heading">Шаг 3</h3>
+                                        <div class="stages--swiper_content">
+                                            Подписание договора (гарантирующий возврат денег в случае недостижения KPI).
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stages--swiper_slide">
+                                        <h3 class="stages--swiper_heading">Шаг 4</h3>
+                                        <div class="stages--swiper_content">
+                                            Внесение Заказчиком 100% предоплаты.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stages--swiper_slide">
+                                        <h3 class="stages--swiper_heading">Шаг 5</h3>
+                                        <div class="stages--swiper_content">
+                                            Подготовка, запуск и ведение рекламных кампаний с предоставлением итогового маркетингового отчёта.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div><!--END OF SWIPER-->
+                    <div class="clearfix"></div>
+                </div><!--END OF CONTENT CONTAINER-->
                 <div class="clearfix"></div>
             </section><!--END OF STAGES SECTION-->
             <!--CONTACTS SECTION-->
-            <section id="contacts" class="contacts">
+            <section id="contacts" class="contacts anc_links">
+                <!--CONTENT CONTAINER-->
+                <div class="content_container">
+                    <h2 class="contacts_heading">Связаться с нами &mdash; легко!</h2>
+                    <p class="contacts_discription">Оставьте заявку на продвижение вашего мобильного предложения, и наш менеджер с Вами свяжется</p>
+                    <form class="form">
+                        <div class="form_group">
+                            <label for="name" class="label">Ваше имя</label>
+                            <input class="input" name="name" placeholder="Ваше имя"/>
+                        </div>
+                        <div class="form_group">
+                            <label for="e-mail" class="label">Ваш e-mail или телефон</label>
+                            <input class="input" name="e-mail" placeholder="E-mail или телефон" />
+                        </div>
+                        <div class="form_group">
+                            <label for="link" class="label">Ссылка на приложение<i class="br"></i> в Google Play</label>
+                            <input class="input" name="link" placeholder="Ссылка на приложение в Google Play" />
+                        </div>
+                        <div class="form_group--tall">
+                            <label for="link" class="label">Краткое описание<i class="br"></i> задачи</label>
+                            <textarea rows="3" class="textarea" name="discription" placeholder="Краткое описание задачи"></textarea>
+                        </div>
+                        <div class="btn_wrapper">
+                            <button class="btn">Воспользоваться предложением</button>
+                        </div>
+                    </form>
+                </div><!--END OF CONTENT CONTAINER-->
                 <div class="clearfix"></div>
             </section><!--END OF CONTACTS SECTION-->
         </main><!--END OF MAIN WRAPPER-->
         <!--FOOTER-->
-        <footer class="footer" role="contentinfo"></footer><!--END OF FOOTER-->
+        <footer class="footer" role="contentinfo">
+            <div class="content_container">
+                <div class="footer_wrapper">
+                    <img class="icon--footer--phone" src="img/footer_icon--call.png"/>
+                    <img class="icon--footer--email" src="img/footer_icon--email.png"/>
+                    <img class="icon--footer--map" src="img/footer_icon--map.png">
+                    <div class="footer_phone">
+                        8 (800) 333-34-68
+                    </div>
+                    <div class="footer_email">
+                        sales@it-grands.ru
+                    </div>
+                    <div class="footer_location">
+                        г. Барнаул, ул. Ползунова, д. 45б
+                    </div>
+                </div>
+            </div>
+        </footer><!--END OF FOOTER-->
     </div><!--END OF WRAPPER-->
     <!--SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
@@ -415,4 +533,4 @@
         sr.reveal();
     </script>
 </body>
-</html>
+</html

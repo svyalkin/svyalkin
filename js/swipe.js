@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function initSwipers() {
     initSwiperAbility();
     initSwiperClients();
+    initSwiperStages();
 }
 
 function initSwiperAbility() {
@@ -67,6 +68,23 @@ function initSwiperClients() {
 
         [].forEach.call(clientsWrapper, function(el) {
             el.classList.remove("swiper-wrapper");
+        });
+    }
+}
+
+function initSwiperStages() {
+    var swiperStages = undefined;
+    if (width < 1200) {
+        swiperStages = new Swiper(".stages--swiper_container", {
+            pagination: null,
+            slidesPerView: 1,
+            spaceBetween: 50,
+            breakpoints: {
+                1023: {
+                    pagination: ".swiper-pagination",
+                    paginationClickable: true
+                }
+            }
         });
     }
 }
