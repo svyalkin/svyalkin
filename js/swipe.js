@@ -73,18 +73,17 @@ function initSwiperClients() {
 }
 
 function initSwiperStages() {
-    var swiperStages = undefined;
-    if (width < 1200) {
         swiperStages = new Swiper(".stages--swiper_container", {
             pagination: null,
+            paginationClickable: true,
             slidesPerView: 1,
             spaceBetween: 50,
             breakpoints: {
-                1023: {
+                767: {
                     pagination: ".swiper-pagination",
                     paginationClickable: true
                 }
             }
         });
-    }
+
 }
